@@ -73,7 +73,7 @@ Credits
 
 ####Author:
 
-  * [Jeff Gilfelt](https://github.com/yaming116)
+  * [yaming116](https://github.com/yaming116)
 
 #### Contributors:
   * [Jeff Gilfelt](https://github.com/jgilfelt)
