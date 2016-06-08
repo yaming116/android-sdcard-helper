@@ -1,4 +1,4 @@
-Android SQLiteSDCArdHelper
+Android SQLiteSDCardHelper
 =========================
 
 An Android helper class to manage database creation and version management store in sdcard.
@@ -39,10 +39,10 @@ Usage
 
 SQLiteSDCArdHelper is intended as a drop in alternative for the framework's [SQLiteOpenHelper](https://developer.android.com/reference/android/database/sqlite/SQLiteOpenHelper.html). Please familiarize yourself with the behaviour and lifecycle of that class.
 
-Extend `SQLiteSDCArdHelper` as you would normally do `SQLiteOpenHelper`, providing the constructor with a database name and version number:
+Extend `SQLiteSDCardHelper` as you would normally do `SQLiteOpenHelper`, providing the constructor with a database name and version number:
 
 ```java
-public class MyDatabase extends SQLiteAssetHelper {
+public class MyDatabase extends SQLiteSDCardHelper {
 
     private static final String DATABASE_NAME = "northwind.db";
     private static final int DATABASE_VERSION = 1;
@@ -58,7 +58,7 @@ Database Upgrades
 
 At a certain point in your application's lifecycle you will need to alter it's database structure to support additional features. You must ensure users who have installed your app prior to this can safely upgrade their local databases without the loss of any locally held data.
 
-To facilitate a database upgrade, increment the version number that you pass to your `SQLiteSDCArdHelper` constructor:
+To facilitate a database upgrade, increment the version number that you pass to your `SQLiteSDCardHelper` constructor:
 
 ```java
 private static final int DATABASE_VERSION = 2;
