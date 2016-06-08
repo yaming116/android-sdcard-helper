@@ -1,6 +1,8 @@
 Android SQLiteSDCardHelper
 =========================
 
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/yaming116/android-sdcard-helper/blob/master/LICENSE)
+
 An Android helper class to manage database creation and version management store in sdcard.
 
 This class provides developers with a simple way to ship their Android app with an existing SQLite database (which may be pre-populated with data) and to manage its initial creation and any upgrades required with subsequent version releases.
